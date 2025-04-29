@@ -53,7 +53,7 @@ const Tabs: React.FC = () => {
         {/* Underline Background */}
         <div className="relative h-1 bg-white rounded-full">
           <div
-            className="absolute h-1 bg-indigo-500 rounded-full transition-all duration-300"
+            className=" h-1 bg-indigo-500 rounded-full transition-all duration-300"
             style={{
               width: `${100 / tabsData.length}%`,
               left: `${(100 / tabsData.length) * activeIndex}%`,
@@ -75,7 +75,7 @@ const Tabs: React.FC = () => {
       </div>
 
       {/* Mobile View */}
-      <div className="flex md:hidden flex-col items-center text-center">
+      <div className="flex lg:hidden flex-col items-center text-center">
         <h3 className="text-2xl font-semibold text-gray-800 mb-4 font-montserrat">
           {tabsData[activeIndex].heading}
         </h3>

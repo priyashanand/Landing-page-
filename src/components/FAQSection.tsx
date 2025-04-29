@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import avatarIcon1 from '/assets/avatarIcon1.jpg';
+import avatarIcon2 from '/assets/avatarIcon2.jpg';
+import avatarIcon3 from '/assets/avatarIcon3.jpg';
 
 interface FAQItem {
   question: string;
@@ -37,7 +40,7 @@ const FAQSection: React.FC = () => {
 
   return (
     // FAQ Section
-    <div className="flex flex-col items-center py-20 px-8 gap-16 w-full min-w-[375px] bg-[#F9FAFB]">
+    <div className="flex flex-col items-center py-20 px-8 gap-16 w-full min-w-[375px] ">
       {/* Title */}
       <div className="flex flex-col items-center gap-4 w-full max-w-[768px]">
         <h2 className="font-montserrat font-semibold text-3xl md:text-5xl text-center text-[#101828]">
@@ -51,7 +54,7 @@ const FAQSection: React.FC = () => {
       {/* FAQs */}
       <div className="flex flex-col gap-10 w-full max-w-[768px]">
         {faqData.map((item, index) => (
-          <div key={index} className="flex flex-col w-full bg-white rounded-xl shadow-sm overflow-hidden">
+          <div key={index} className="flex flex-col w-full rounded-xl shadow-sm overflow-hidden">
             <div
               onClick={() => toggleExpand(index)}
               className="flex justify-between items-center p-4 cursor-pointer border-b border-gray-100"
@@ -89,10 +92,26 @@ const FAQSection: React.FC = () => {
       {/* (Add your "Contact Us" section here similarly) */}
       <div className="flex flex-col items-center p-10 gap-8 w-full md:w-[1216px] rounded-xl bg-white">
         <div className="flex items-center">
-          <div className="relative w-12 h-12 rounded-full border-2 border-white bg-[#D9D9D9]" style={{ marginLeft: '0px' }}></div>
-          <div className="relative w-12 h-12 rounded-full border-2 border-white bg-[#D9D9D9]" style={{ marginLeft: '-8px' }}></div>
-          <div className="relative w-12 h-12 rounded-full border-2 border-white bg-[#D9D9D9]" style={{ marginLeft: '-8px' }}></div>
+          <div
+            className="relative w-12 h-12 rounded-full border-2 border-white bg-[#D9D9D9] overflow-hidden"
+            style={{ marginLeft: '0px' }}
+          >
+            <img src={avatarIcon1} alt="Avatar 1" className="w-full h-full object-cover" />
+          </div>
+          <div
+            className="relative w-12 h-12 rounded-full border-2 border-white bg-[#D9D9D9] overflow-hidden"
+            style={{ marginLeft: '-8px' }}
+          >
+            <img src={avatarIcon2} alt="Avatar 2" className="w-full h-full object-cover" />
+          </div>
+          <div
+            className="relative w-12 h-12 rounded-full border-2 border-white bg-[#D9D9D9] overflow-hidden"
+            style={{ marginLeft: '-8px' }}
+          >
+            <img src={avatarIcon3} alt="Avatar 3" className="w-full h-full object-cover" />
+          </div>
         </div>
+
         <div className="flex flex-col items-center gap-4 w-full">
           <div className="flex flex-col items-center gap-2 w-full">
             <h3 className="font-montserrat font-semibold text-xl leading-[140%] text-center text-[#101828]">

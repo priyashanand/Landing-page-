@@ -11,12 +11,11 @@ const Description = () => {
         capture every opportunity, and simplify case management for
         plaintiff-side law firms.
       </p>
-
       <div className="flex flex-col md:flex-row justify-center items-center pt-4 gap-4 w-full max-w-[377px] h-auto">
-        <button className="px-6 py-3 bg-blue-600 text-white rounded-md">
+        <button className="px-6 py-3 w-full md:w-[181px] bg-blue-600 text-white rounded-md">
           Get Started
         </button>
-        <button className="flex justify-center items-center md:w-[181px] h-12 px-7 py-3.5 gap-2 border border-[#D0D5DD] rounded-md drop-shadow-sm text-slate-700">
+        <button className="flex justify-center items-center w-full md:w-[181px] h-12 px-7 py-3.5 gap-2 border border-[#D0D5DD] rounded-md drop-shadow-sm text-slate-700">
           <img src="/assets/play.png" alt="Play" className="w-4 h-4" />
           Book a Demo
         </button>
