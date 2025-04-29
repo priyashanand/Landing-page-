@@ -51,7 +51,7 @@ const FeaturesV2: React.FC = () => {
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[440px] h-[259px] border border-gray-300 rounded-md flex items-center justify-center bg-gray-200">
                 <div
                   className="w-[430px] h-[248px] bg-cover bg-center rounded-sm border border-gray-300"
-                  style={{ backgroundImage: 'url(src/assets/featuresv2.png)' }}
+                  style={{ backgroundImage: 'url(/assets/featuresv2.png)' }}
                 ></div>
               </div>
             </div>
@@ -103,7 +103,7 @@ const FeaturesV2: React.FC = () => {
         <div className="w-full pt-10 flex justify-center">
           <div className="w-[90%] h-[200px] bg-gray-200 rounded-md overflow-hidden border border-gray-300 flex items-center justify-center">
             <img
-              src="src/assets/featuresv2.png"
+              src="/assets/featuresv2.png"
               alt="Features Preview"
               className="object-cover w-full h-full"
             />

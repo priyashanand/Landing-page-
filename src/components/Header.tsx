@@ -7,7 +7,7 @@ const Header = () => {
     <header className="flex justify-between items-center py-6 px-6 md:px-10 relative z-50">
       {/* Logo */}
       <div className="flex items-center gap-2">
-        <img src="src/assets/image.png" alt="InjurySync Logo" className="h-8" />
+        <img src="/assets/image.png" alt="InjurySync Logo" className="h-8" />
       </div>
 
       {/* Desktop Nav */}

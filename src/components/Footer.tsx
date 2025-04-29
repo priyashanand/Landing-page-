@@ -1,8 +1,8 @@
 import React from 'react';
-import InjurySyncLogo from '../assets/image.png';
-import XIcon from '../assets/x-icon.png';
-import LinkedInIcon from '../assets/linkedin-icon.png';
-import InstagramIcon from '../assets/instagram-icon.png';
+import InjurySyncLogo from '/assets/image.png';
+import XIcon from '/assets/x-icon.png';
+import LinkedInIcon from '/assets/linkedin-icon.png';
+import InstagramIcon from '/assets/instagram-icon.png';
 
 const Footer: React.FC = () => {
   return (

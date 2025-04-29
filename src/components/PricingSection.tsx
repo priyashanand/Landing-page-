@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import checkIcon from '../assets/check.png'; // Default check icon
-import blueCheckIcon from '../assets/blueCheck.png'; // Blue check icon
+import checkIcon from '/assets/check.png'; // Default check icon
+import blueCheckIcon from '/assets/blueCheck.png'; // Blue check icon
 
 interface Plan {
   name: string;

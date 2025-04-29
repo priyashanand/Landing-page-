@@ -19,7 +19,7 @@ const ContactUsSection: React.FC = () => {
         <div className="flex flex-col items-center md:items-start gap-6 w-full">
           {/* Phone */}
           <div className="flex items-center gap-2">
-            <img src="src/assets/phone.png" alt="Phone" className="w-6 h-6" />
+            <img src="/assets/phone.png" alt="Phone" className="w-6 h-6" />
             <span className="font-source-sans-pro text-lg text-[#475467]">(+1) 000 0000 000</span>
           </div>
 
@@ -91,7 +91,7 @@ const ContactUsSection: React.FC = () => {
         <span className="font-montserrat font-medium text-sm p-5 text-white leading-5">
           Send Message
         </span>
-        <img src="src/assets/send.png" alt="Send" className="w-4 h-4" />
+        <img src="/assets/send.png" alt="Send" className="w-4 h-4" />
       </button>
       </div>
     </div>

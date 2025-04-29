@@ -1,5 +1,5 @@
 import React from 'react';
-import burstImage from '../assets/burst1.png'; // make sure it's really there
+import burstImage from '/assets/burst1.png'; // make sure it's really there
 
 const CallToActionSection: React.FC = () => {
   return (

@@ -17,7 +17,7 @@ const Description = () => {
           Get Started
         </button>
         <button className="flex justify-center items-center md:w-[181px] h-12 px-7 py-3.5 gap-2 border border-[#D0D5DD] rounded-md drop-shadow-sm text-slate-700">
-          <img src="src/assets/play.png" alt="Play" className="w-4 h-4" />
+          <img src="/assets/play.png" alt="Play" className="w-4 h-4" />
           Book a Demo
         </button>
       </div>
