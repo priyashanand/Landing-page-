@@ -16,28 +16,30 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div
-      className="absolute h-full w-full bg-no-repeat bg-cover bg-center"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
-    >
-      {/* Background Shapes */}
-      {/* <div className="absolute top-0 left-0 w-96 h-96 bg-blue-100 rounded-full opacity-20 blur-3xl -translate-x-1/2 -translate-y-1/2" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-200 rounded-full opacity-20 blur-3xl translate-x-1/2 translate-y-1/2" /> */}
+    <div className="relative w-full">
+      {/* Background image behind top content */}
+      <img
+        src={backgroundImage}
+        alt="Background"
+        className="absolute top-0 left-0  md:w-full md:h-auto object-cover -z-10"
+      />
 
-      {/* Content */}
-      <Header />
-      <Hero />
-      <Dashboard />
-      <FeaturesDash />
-      <Features />
-      <Tabs />
-      <FeaturesV2Dash />
-      <FeaturesV2 />
-      <Pricing />
-      <FAQSection />
-      <ContactUsSection />
-      <CallToActionSection />
-      <Footer />
+      {/* Main content */}
+      <div className="relative z-0">
+        <Header />
+        <Hero />
+        <Dashboard />
+        <FeaturesDash />
+        <Features />
+        <Tabs />
+        <FeaturesV2Dash />
+        <FeaturesV2 />
+        <Pricing />
+        <FAQSection />
+        <ContactUsSection />
+        <CallToActionSection />
+        <Footer />
+      </div>
     </div>
   );
 }
